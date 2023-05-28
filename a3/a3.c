@@ -221,7 +221,6 @@ int main() {
             write(respPipe, "ECHO!", 5);
             write(respPipe, "VARIANT!", 8);
             write(respPipe, &variant, sizeof(unsigned int));
-            break;
         }
 
         if (strcmp(buffer, "CREATE_SHM!") == 0) {
@@ -255,5 +254,4 @@ int main() {
             return 0;
         }
     }
-    return 0;
 }
